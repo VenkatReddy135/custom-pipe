@@ -1,0 +1,15 @@
+<div style="text-align: center;" class="container">
+<h1 style="color: green;">Table-List</h1>
+<table border="3">
+    <tr>
+        <th>Id</th>
+        <th>NAME</th>
+        <th>Gender</th>
+    </tr>
+    <tr *ngFor="let emp of employees">
+        <td>{{emp.id}}</td>
+        <td>{{emp.name|employeeTitle:emp.gender}}</td>
+        <td>{{emp.gender}}</td>
+    </tr>
+</table>
+</div>
